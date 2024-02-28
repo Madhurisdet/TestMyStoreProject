@@ -19,7 +19,7 @@ public class AccountCreationPageTest extends BaseClass {
 	private AccountCreationPage acountCreationPage;
 	private HomePage homePage;
 	
-	@Parameters("browser")
+	//@Parameters("browser")
 	@BeforeMethod(groups = {"Smoke","Sanity","Regression"})
 	public void setup(String browser) {
 		launchApp(browser); 

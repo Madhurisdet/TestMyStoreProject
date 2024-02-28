@@ -59,7 +59,7 @@ public class BaseClass {
 	}
 
 	public void launchApp(String browserName) {
-		// String browserName = prop.getProperty("browser");
+		//String browserName = prop.getProperty("browser");
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			WebDriverManager.chromedriver().setup();
 			// Set Browser to ThreadLocalMap

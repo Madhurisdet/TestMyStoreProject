@@ -5,73 +5,83 @@
     <listener class-name="com.mystore.utility.ListenerClass"/>
   </listeners>
   <test thread-count="5" name="Test_All(failed)">
-    <parameter name="browser" value="Chrome"/>
+    <parameter name="browser" value="FireFox"/>
     <classes>
-      <class name="com.mystore.testcases.LoginPageTest">
+      <class name="com.mystore.testcases.OrderPageTest">
         <methods>
+          <include name="loadConfig"/>
+          <include name="setup"/>
+          <include name="afterSuite"/>
+          <include name="verifyTotalPrice"/>
           <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.mystore.testcases.OrderPageTest -->
+      <class name="com.mystore.testcases.AccountCreationPageTest">
+        <methods>
           <include name="loadConfig"/>
           <include name="afterSuite"/>
-          <include name="loginTest" invocation-numbers="0"/>
+          <include name="verifyCreateAccountPageTest"/>
+          <include name="setup"/>
+          <include name="createAccountTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.mystore.testcases.AccountCreationPageTest -->
+      <class name="com.mystore.testcases.LoginPageTest">
+        <methods>
+          <include name="loadConfig"/>
+          <include name="tearDown"/>
+          <include name="afterSuite"/>
+          <include name="loginTest"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.mystore.testcases.LoginPageTest -->
-      <class name="com.mystore.testcases.EndToEndTest">
-        <methods>
-          <include name="loadConfig"/>
-          <include name="afterSuite"/>
-          <include name="tearDown"/>
-          <include name="endToEndTest" invocation-numbers="0"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.mystore.testcases.EndToEndTest -->
       <class name="com.mystore.testcases.IndexPageTest">
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
+          <include name="verifyLogo"/>
           <include name="loadConfig"/>
           <include name="afterSuite"/>
           <include name="verifyTitle"/>
         </methods>
       </class> <!-- com.mystore.testcases.IndexPageTest -->
-      <class name="com.mystore.testcases.HomePageTest">
-        <methods>
-          <include name="orderHistoryandDetailsTest" invocation-numbers="0"/>
-          <include name="tearDown"/>
-          <include name="loadConfig"/>
-          <include name="afterSuite"/>
-          <include name="setup"/>
-          <include name="wishListTest" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.mystore.testcases.HomePageTest -->
-      <class name="com.mystore.testcases.AccountCreationPageTest">
+      <class name="com.mystore.testcases.SearchResultPageTest">
         <methods>
           <include name="loadConfig"/>
           <include name="afterSuite"/>
-          <include name="verifyCreateAccountPageTest" invocation-numbers="0"/>
           <include name="setup"/>
-          <include name="createAccountTest" invocation-numbers="0 1 2"/>
           <include name="tearDown"/>
+          <include name="productAvailabilityTest"/>
         </methods>
-      </class> <!-- com.mystore.testcases.AccountCreationPageTest -->
-      <class name="com.mystore.testcases.OrderPageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="loadConfig"/>
-          <include name="afterSuite"/>
-          <include name="verifyTotalPrice" invocation-numbers="0"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.mystore.testcases.OrderPageTest -->
+      </class> <!-- com.mystore.testcases.SearchResultPageTest -->
       <class name="com.mystore.testcases.AddToCartPageTest">
         <methods>
           <include name="setup"/>
-          <include name="addToCartTest" invocation-numbers="0"/>
+          <include name="addToCartTest"/>
           <include name="loadConfig"/>
           <include name="afterSuite"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.mystore.testcases.AddToCartPageTest -->
+      <class name="com.mystore.testcases.HomePageTest">
+        <methods>
+          <include name="orderHistoryandDetailsTest"/>
+          <include name="tearDown"/>
+          <include name="loadConfig"/>
+          <include name="afterSuite"/>
+          <include name="setup"/>
+          <include name="wishListTest"/>
+        </methods>
+      </class> <!-- com.mystore.testcases.HomePageTest -->
+      <class name="com.mystore.testcases.EndToEndTest">
+        <methods>
+          <include name="loadConfig"/>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+          <include name="endToEndTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.mystore.testcases.EndToEndTest -->
     </classes>
   </test> <!-- Test_All(failed) -->
 </suite> <!-- Failed suite [Suite] -->

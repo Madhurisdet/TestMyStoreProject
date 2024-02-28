@@ -31,6 +31,7 @@ import com.mystore.base.BaseClass;
 
 public class Action extends BaseClass  {
 
+	static WebDriverWait wait;
 	
 	public static void scrollByVisibilityOfElement(WebDriver driver, WebElement ele) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -311,7 +312,7 @@ public class Action extends BaseClass  {
 	public static boolean switchToFrameByIndex(WebDriver driver,int index) {
 		boolean flag = false;
 		try {
-			new WebDriverWait(driver, 15).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe")));
+			new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe")));
 			driver.switchTo().frame(index);
 			flag = true;
 			return true;
@@ -746,10 +747,12 @@ public class Action extends BaseClass  {
 	}
 	
 	public static void explicitWait(WebDriver driver, WebElement element, int timeOut ) {
-		WebDriverWait wait = new WebDriverWait(driver,timeOut);
+		
+			wait = new WebDriverWait(driver,Duration.ofSeconds(timeOut));
+		
 		wait.until(ExpectedConditions.visibilityOf(element));
-	}
 	
+	}
 	public static void pageLoadTimeOut(WebDriver driver, int timeOut) {
 		driver.manage().timeouts().pageLoadTimeout(timeOut, TimeUnit.SECONDS);
 	}

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test_All</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/13</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 09 11:26:54 PST 2023</td>
+<td>Started on:</td><td>Mon Feb 26 12:01:07 PST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>47 seconds (47354 ms)</td>
+<tr><td>Total time:</td><td>12 seconds (12127 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,103 +76,41 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.mystore.testcases.AccountCreationPageTest.createAccountTest()'><b>createAccountTest</b><br>Test class: com.mystore.testcases.AccountCreationPageTest<br>Parameters: {Month=7, Email=rockstar15@gmail.com, Year=1985, FirstName=TestUser, Gender=Mrs, LastName=UserTest, SetPassword=hgsdtyf, Day=28}</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+<td title='com.mystore.testcases.HomePageTest.setup()'><b>setup</b><br>Test class: com.mystore.testcases.HomePageTest<br>Parameters: FireFox</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
-	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:655)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
-	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
-	at org.openqa.selenium.json.Json.toJson(Json.java:42)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at com.mystore.actiondriver.Action.click(Action.java:45)
-	at com.mystore.pageobjects.AccountCreationPage.createAccount(AccountCreationPage.java:100)
-	at com.mystore.testcases.AccountCreationPageTest.createAccountTest(AccountCreationPageTest.java:50)
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.HomePageTest.setup(HomePageTest.java:27)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1686965869", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1686965869'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
-		at org.openqa.selenium.json.Json.toJson(Json.java:44)
-		... 36 more
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
-	... 48 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_gender2&quot;}
-  (Session info: chrome=119.0.6045.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\kiran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55165}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 43912a385e3d18cadeaab707a509fcfe
-*** Element info: {Using=id, value=id_gender2}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
-	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
-	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
-	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
-	... 50 more
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace841721161", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace841721161'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
-	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:655)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
-	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
-	at org.openqa.selenium.json.Json.toJson(Json.java:42)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at com.mystore.actiondriver.Action.click(Action.java:45)
-	at com.mystore.pageobjects.AccountCreationPage.createAccount(AccountCreationPage.java:100)
-	at com.mystore.testcases.AccountCreationPageTest.createAccountTest(AccountCreationPageTest.java:50)
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.HomePageTest.setup(HomePageTest.java:27)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
 	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
@@ -195,150 +133,167 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
-		at org.openqa.selenium.json.Json.toJson(Json.java:44)
-		... 36 more
-Caused by: java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:119)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
-	... 48 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_gender2&quot;}
-  (Session info: chrome=119.0.6045.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\kiran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55165}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 43912a385e3d18cadeaab707a509fcfe
-*** Element info: {Using=id, value=id_gender2}
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
-	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
-	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
-	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	... 50 more
 </pre></div></td>
-<td>12</td>
+<td>0</td>
+<td>com.mystore.testcases.HomePageTest@6a78afa0</td></tr>
+<tr>
+<td title='com.mystore.testcases.SearchResultPageTest.setup()'><b>setup</b><br>Test class: com.mystore.testcases.SearchResultPageTest<br>Parameters: FireFox</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.SearchResultPageTest.setup(SearchResultPageTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1756587746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1756587746'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.SearchResultPageTest.setup(SearchResultPageTest.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.mystore.testcases.SearchResultPageTest@1f2586d6</td></tr>
+<tr>
+<td title='com.mystore.testcases.AccountCreationPageTest.setup()'><b>setup</b><br>Test class: com.mystore.testcases.AccountCreationPageTest<br>Parameters: FireFox</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.AccountCreationPageTest.setup(AccountCreationPageTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1751500625", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1751500625'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.AccountCreationPageTest.setup(AccountCreationPageTest.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
 <td>com.mystore.testcases.AccountCreationPageTest@4c12331b</td></tr>
 <tr>
-<td title='com.mystore.testcases.AccountCreationPageTest.createAccountTest()'><b>createAccountTest</b><br>Test class: com.mystore.testcases.AccountCreationPageTest<br>Parameters: {Month=7, Email=rockstar11@gmail.com, Year=1985, FirstName=TestUser, Gender=Mrs, LastName=UserTest, SetPassword=hgsdtyf, Day=27}</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+<td title='com.mystore.testcases.AddToCartPageTest.setup()'><b>setup</b><br>Test class: com.mystore.testcases.AddToCartPageTest<br>Parameters: FireFox</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
-	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:655)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
-	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
-	at org.openqa.selenium.json.Json.toJson(Json.java:42)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at com.mystore.actiondriver.Action.click(Action.java:45)
-	at com.mystore.pageobjects.AccountCreationPage.createAccount(AccountCreationPage.java:100)
-	at com.mystore.testcases.AccountCreationPageTest.createAccountTest(AccountCreationPageTest.java:50)
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.AddToCartPageTest.setup(AddToCartPageTest.java:29)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace941453849", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace941453849'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
-		at org.openqa.selenium.json.Json.toJson(Json.java:44)
-		... 36 more
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
-	... 48 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_gender2&quot;}
-  (Session info: chrome=119.0.6045.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\kiran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55130}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f2ef4ec1d7f6bcfd7edb324b5b29ca65
-*** Element info: {Using=id, value=id_gender2}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
-	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
-	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
-	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
-	... 50 more
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace327853004", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace327853004'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
-	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:655)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
-	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
-	at org.openqa.selenium.json.Json.toJson(Json.java:42)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at com.mystore.actiondriver.Action.click(Action.java:45)
-	at com.mystore.pageobjects.AccountCreationPage.createAccount(AccountCreationPage.java:100)
-	at com.mystore.testcases.AccountCreationPageTest.createAccountTest(AccountCreationPageTest.java:50)
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.AddToCartPageTest.setup(AddToCartPageTest.java:29)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
 	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
@@ -361,51 +316,1153 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
-		at org.openqa.selenium.json.Json.toJson(Json.java:44)
-		... 36 more
-Caused by: java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:119)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
-	... 48 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_gender2&quot;}
-  (Session info: chrome=119.0.6045.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\kiran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55130}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f2ef4ec1d7f6bcfd7edb324b5b29ca65
-*** Element info: {Using=id, value=id_gender2}
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
-	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
-	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
-	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	... 50 more
 </pre></div></td>
-<td>12</td>
+<td>1</td>
+<td>com.mystore.testcases.AddToCartPageTest@dd05255</td></tr>
+<tr>
+<td title='com.mystore.testcases.LoginPageTest.setup()'><b>setup</b><br>Test class: com.mystore.testcases.LoginPageTest<br>Parameters: FireFox</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.LoginPageTest.setup(LoginPageTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace362030306", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace362030306'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.LoginPageTest.setup(LoginPageTest.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.mystore.testcases.LoginPageTest@10683d9d</td></tr>
+<tr>
+<td title='com.mystore.testcases.IndexPageTest.setup()'><b>setup</b><br>Test class: com.mystore.testcases.IndexPageTest<br>Parameters: FireFox</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.IndexPageTest.setup(IndexPageTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1511906746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1511906746'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.IndexPageTest.setup(IndexPageTest.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.mystore.testcases.IndexPageTest@3fc2959f</td></tr>
+<tr>
+<td title='com.mystore.testcases.EndToEndTest.setup()'><b>setup</b><br>Test class: com.mystore.testcases.EndToEndTest<br>Parameters: FireFox</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.EndToEndTest.setup(EndToEndTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1155521880", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1155521880'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.EndToEndTest.setup(EndToEndTest.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.mystore.testcases.EndToEndTest@5aa9e4eb</td></tr>
+<tr>
+<td title='com.mystore.testcases.OrderPageTest.setup()'><b>setup</b><br>Test class: com.mystore.testcases.OrderPageTest<br>Parameters: FireFox</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.OrderPageTest.setup(OrderPageTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1920147706", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1920147706'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.OrderPageTest.setup(OrderPageTest.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.mystore.testcases.OrderPageTest@2f4948e4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mystore.testcases.AccountCreationPageTest.tearDown()'><b>tearDown</b><br>Test class: com.mystore.testcases.AccountCreationPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.AccountCreationPageTest@4c12331b</td></tr>
+<tr>
+<td title='com.mystore.testcases.AddToCartPageTest.tearDown()'><b>tearDown</b><br>Test class: com.mystore.testcases.AddToCartPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.AddToCartPageTest@dd05255</td></tr>
+<tr>
+<td title='com.mystore.testcases.HomePageTest.setup()'><b>setup</b><br>Test class: com.mystore.testcases.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.HomePageTest@6a78afa0</td></tr>
+<tr>
+<td title='com.mystore.testcases.AccountCreationPageTest.setup()'><b>setup</b><br>Test class: com.mystore.testcases.AccountCreationPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.AccountCreationPageTest@4c12331b</td></tr>
+<tr>
+<td title='com.mystore.testcases.AccountCreationPageTest.tearDown()'><b>tearDown</b><br>Test class: com.mystore.testcases.AccountCreationPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.AccountCreationPageTest@4c12331b</td></tr>
+<tr>
+<td title='com.mystore.testcases.OrderPageTest.tearDown()'><b>tearDown</b><br>Test class: com.mystore.testcases.OrderPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.OrderPageTest@2f4948e4</td></tr>
+<tr>
+<td title='com.mystore.testcases.EndToEndTest.tearDown()'><b>tearDown</b><br>Test class: com.mystore.testcases.EndToEndTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.EndToEndTest@5aa9e4eb</td></tr>
+<tr>
+<td title='com.mystore.testcases.SearchResultPageTest.tearDown()'><b>tearDown</b><br>Test class: com.mystore.testcases.SearchResultPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.SearchResultPageTest@1f2586d6</td></tr>
+<tr>
+<td title='com.mystore.testcases.HomePageTest.tearDown()'><b>tearDown</b><br>Test class: com.mystore.testcases.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.HomePageTest@6a78afa0</td></tr>
+<tr>
+<td title='com.mystore.testcases.AccountCreationPageTest.setup()'><b>setup</b><br>Test class: com.mystore.testcases.AccountCreationPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.AccountCreationPageTest@4c12331b</td></tr>
+<tr>
+<td title='com.mystore.testcases.AccountCreationPageTest.tearDown()'><b>tearDown</b><br>Test class: com.mystore.testcases.AccountCreationPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.AccountCreationPageTest@4c12331b</td></tr>
+<tr>
+<td title='com.mystore.testcases.IndexPageTest.tearDown()'><b>tearDown</b><br>Test class: com.mystore.testcases.IndexPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.IndexPageTest@3fc2959f</td></tr>
+<tr>
+<td title='com.mystore.testcases.IndexPageTest.setup()'><b>setup</b><br>Test class: com.mystore.testcases.IndexPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.IndexPageTest@3fc2959f</td></tr>
+<tr>
+<td title='com.mystore.testcases.HomePageTest.tearDown()'><b>tearDown</b><br>Test class: com.mystore.testcases.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.HomePageTest@6a78afa0</td></tr>
+<tr>
+<td title='com.mystore.testcases.LoginPageTest.tearDown()'><b>tearDown</b><br>Test class: com.mystore.testcases.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.LoginPageTest@10683d9d</td></tr>
+<tr>
+<td title='com.mystore.testcases.IndexPageTest.tearDown()'><b>tearDown</b><br>Test class: com.mystore.testcases.IndexPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.IndexPageTest@3fc2959f</td></tr>
+<tr>
+<td title='com.mystore.testcases.AccountCreationPageTest.tearDown()'><b>tearDown</b><br>Test class: com.mystore.testcases.AccountCreationPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.AccountCreationPageTest@4c12331b</td></tr>
+<tr>
+<td title='com.mystore.testcases.AccountCreationPageTest.setup()'><b>setup</b><br>Test class: com.mystore.testcases.AccountCreationPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.AccountCreationPageTest@4c12331b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mystore.testcases.AddToCartPageTest.addToCartTest()'><b>addToCartTest</b><br>Test class: com.mystore.testcases.AddToCartPageTest<br>Parameters: t-shirt, 2.0, M</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.AddToCartPageTest.setup(AddToCartPageTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2109615807", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2109615807'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.AddToCartPageTest.setup(AddToCartPageTest.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.mystore.testcases.AddToCartPageTest@dd05255</td></tr>
+<tr>
+<td title='com.mystore.testcases.HomePageTest.orderHistoryandDetailsTest()'><b>orderHistoryandDetailsTest</b><br>Test class: com.mystore.testcases.HomePageTest<br>Parameters: admin@xyz.com, admin@123</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.HomePageTest.setup(HomePageTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace554510956", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace554510956'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.HomePageTest.setup(HomePageTest.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.mystore.testcases.HomePageTest@6a78afa0</td></tr>
+<tr>
+<td title='com.mystore.testcases.HomePageTest.wishListTest()'><b>wishListTest</b><br>Test class: com.mystore.testcases.HomePageTest<br>Parameters: admin@xyz.com, admin@123</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.HomePageTest.setup(HomePageTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace828831332", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace828831332'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.HomePageTest.setup(HomePageTest.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.mystore.testcases.HomePageTest@6a78afa0</td></tr>
+<tr>
+<td title='com.mystore.testcases.IndexPageTest.verifyLogo()'><b>verifyLogo</b><br>Test class: com.mystore.testcases.IndexPageTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.IndexPageTest.setup(IndexPageTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1343407473", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1343407473'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.IndexPageTest.setup(IndexPageTest.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.mystore.testcases.IndexPageTest@3fc2959f</td></tr>
+<tr>
+<td title='com.mystore.testcases.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.mystore.testcases.LoginPageTest<br>Parameters: admin@xyz.com, admin@123</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.LoginPageTest.setup(LoginPageTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1906635841", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1906635841'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.LoginPageTest.setup(LoginPageTest.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.mystore.testcases.LoginPageTest@10683d9d</td></tr>
+<tr>
+<td title='com.mystore.testcases.EndToEndTest.endToEndTest()'><b>endToEndTest</b><br>Test class: com.mystore.testcases.EndToEndTest<br>Parameters: t-shirt, 2.0, M</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.EndToEndTest.setup(EndToEndTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1522494105", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1522494105'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.EndToEndTest.setup(EndToEndTest.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.mystore.testcases.EndToEndTest@5aa9e4eb</td></tr>
+<tr>
+<td title='com.mystore.testcases.AccountCreationPageTest.createAccountTest()'><b>createAccountTest</b><br>Test class: com.mystore.testcases.AccountCreationPageTest<br>Parameters: {Month=7, Email=rockstar11@gmail.com, Year=1985, FirstName=TestUser, Gender=Mrs, LastName=UserTest, SetPassword=hgsdtyf, Day=27}</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.AccountCreationPageTest.setup(AccountCreationPageTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1831875736", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1831875736'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.AccountCreationPageTest.setup(AccountCreationPageTest.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.mystore.testcases.AccountCreationPageTest@4c12331b</td></tr>
+<tr>
+<td title='com.mystore.testcases.AccountCreationPageTest.createAccountTest()'><b>createAccountTest</b><br>Test class: com.mystore.testcases.AccountCreationPageTest<br>Parameters: {Month=7, Email=rockstar15@gmail.com, Year=1985, FirstName=TestUser, Gender=Mrs, LastName=UserTest, SetPassword=hgsdtyf, Day=28}</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.AccountCreationPageTest.setup(AccountCreationPageTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace47719432", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace47719432'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.AccountCreationPageTest.setup(AccountCreationPageTest.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.mystore.testcases.AccountCreationPageTest@4c12331b</td></tr>
+<tr>
+<td title='com.mystore.testcases.SearchResultPageTest.productAvailabilityTest()'><b>productAvailabilityTest</b><br>Test class: com.mystore.testcases.SearchResultPageTest<br>Parameters: t-shirt</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.SearchResultPageTest.setup(SearchResultPageTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace912511162", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace912511162'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.SearchResultPageTest.setup(SearchResultPageTest.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.mystore.testcases.SearchResultPageTest@1f2586d6</td></tr>
+<tr>
+<td title='com.mystore.testcases.OrderPageTest.verifyTotalPrice()'><b>verifyTotalPrice</b><br>Test class: com.mystore.testcases.OrderPageTest<br>Parameters: t-shirt, 2.0, M</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.OrderPageTest.setup(OrderPageTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace823056052", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace823056052'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.OrderPageTest.setup(OrderPageTest.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.mystore.testcases.OrderPageTest@2f4948e4</td></tr>
+<tr>
+<td title='com.mystore.testcases.IndexPageTest.verifyTitle()'><b>verifyTitle</b><br>Test class: com.mystore.testcases.IndexPageTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.IndexPageTest.setup(IndexPageTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1178953630", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1178953630'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.IndexPageTest.setup(IndexPageTest.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.mystore.testcases.IndexPageTest@3fc2959f</td></tr>
+<tr>
+<td title='com.mystore.testcases.AccountCreationPageTest.createAccountTest()'><b>createAccountTest</b><br>Test class: com.mystore.testcases.AccountCreationPageTest<br>Parameters: {Month=7, Email=rockstar20@gmail.com, Year=1985, FirstName=TestUser, Gender=Mrs, LastName=UserTest, SetPassword=hgsdtyf, Day=22}</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.AccountCreationPageTest.setup(AccountCreationPageTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace443348849", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace443348849'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.AccountCreationPageTest.setup(AccountCreationPageTest.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.mystore.testcases.AccountCreationPageTest@4c12331b</td></tr>
+<tr>
+<td title='com.mystore.testcases.AccountCreationPageTest.verifyCreateAccountPageTest()'><b>verifyCreateAccountPageTest</b><br>Test class: com.mystore.testcases.AccountCreationPageTest<br>Parameters: ghfsdtyfg@gmail.com</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.AccountCreationPageTest.setup(AccountCreationPageTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1203142603", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1203142603'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-I3FF954E&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+	at com.mystore.base.BaseClass.launchApp(BaseClass.java:69)
+	at com.mystore.testcases.AccountCreationPageTest.setup(AccountCreationPageTest.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
 <td>com.mystore.testcases.AccountCreationPageTest@4c12331b</td></tr>
 </table><p>
 </body>

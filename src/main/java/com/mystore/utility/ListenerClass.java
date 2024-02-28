@@ -44,11 +44,11 @@ public class ListenerClass extends ExtentManager implements ITestListener {
 		}
 	}
 
-	public void onTestSkipped(ITestResult result) {
-		if (result.getStatus() == ITestResult.SKIP) {
-			test.log(Status.SKIP, "Skipped Test case is: " + result.getName());
-		}
-	}
+//	public void onTestSkipped(ITestResult result) {
+//		if (result.getStatus() == ITestResult.SKIP) {
+//			test.log(Status.SKIP, "Skipped Test case is: " + result.getName());
+//		}
+//	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 		// TODO Auto-generated method stub

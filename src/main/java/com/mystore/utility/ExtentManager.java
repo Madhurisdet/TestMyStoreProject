@@ -23,7 +23,7 @@ public class ExtentManager {
 		
 		extent.setSystemInfo("HostName", "MyHost");
 		extent.setSystemInfo("ProjectName", "MyStoreProject");
-		extent.setSystemInfo("Tester", "Hitendra");
+		extent.setSystemInfo("Tester", "Madhuri");
 		extent.setSystemInfo("OS", "Win10");
 		extent.setSystemInfo("Browser", "Chrome");
 	}

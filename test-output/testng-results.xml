@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-09T11:19:06 PST" name="Default suite" finished-at="2023-11-09T11:19:07 PST" duration-ms="626">
+  <suite started-at="2024-02-28T08:49:59 PST" name="Default suite" finished-at="2024-02-28T08:49:59 PST" duration-ms="62">
     <groups>
-      <group name="Sanity">
-        <method signature="AddToCartPageTest.addToCartTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.mystore.testcases.AddToCartPageTest@36ebc363]" name="addToCartTest" class="com.mystore.testcases.AddToCartPageTest"/>
-      </group> <!-- Sanity -->
-      <group name="Regression">
-        <method signature="AddToCartPageTest.addToCartTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.mystore.testcases.AddToCartPageTest@36ebc363]" name="addToCartTest" class="com.mystore.testcases.AddToCartPageTest"/>
-      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="IndexPageTest.verifyLogo()[pri:0, instance:com.mystore.testcases.IndexPageTest@1ce24091]" name="verifyLogo" class="com.mystore.testcases.IndexPageTest"/>
+        <method signature="IndexPageTest.verifyTitle()[pri:0, instance:com.mystore.testcases.IndexPageTest@1ce24091]" name="verifyTitle" class="com.mystore.testcases.IndexPageTest"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-11-09T11:19:06 PST" name="Default test" finished-at="2023-11-09T11:19:07 PST" duration-ms="626">
-      <class name="com.mystore.testcases.AddToCartPageTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.mystore.testcases.AddToCartPageTest@36ebc363]" started-at="2023-11-09T11:19:06 PST" name="loadConfig" finished-at="2023-11-09T11:19:06 PST" duration-ms="297" status="PASS">
+    <test started-at="2024-02-28T08:49:59 PST" name="Default test" finished-at="2024-02-28T08:49:59 PST" duration-ms="62">
+      <class name="com.mystore.testcases.IndexPageTest">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.mystore.testcases.IndexPageTest@1ce24091]" started-at="2024-02-28T08:49:59 PST" name="loadConfig" finished-at="2024-02-28T08:49:59 PST" duration-ms="224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.AddToCartPageTest@36ebc363]" started-at="2023-11-09T11:19:07 PST" name="setup" finished-at="1969-12-31T16:00:00 PST" duration-ms="-1699557547009" status="FAIL">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.IndexPageTest@1ce24091]" started-at="2024-02-28T08:49:59 PST" name="setup" finished-at="1969-12-31T16:00:00 PST" duration-ms="-1709138999733" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in C:\Users\kiran\AppData\Local\Temp\testng-eclipse-564812919\testng-customsuite.xml]]>
+in C:\Users\kiran\AppData\Local\Temp\testng-eclipse--294526343\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in C:\Users\kiran\AppData\Local\Temp\testng-eclipse-564812919\testng-customsuite.xml
+in C:\Users\kiran\AppData\Local\Temp\testng-eclipse--294526343\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:267)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
 at org.testng.internal.Parameters.createParameters(Parameters.java:684)
@@ -63,34 +61,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addToCartTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.mystore.testcases.AddToCartPageTest@36ebc363]" started-at="2023-11-09T11:19:07 PST" name="addToCartTest" data-provider="getProduct" finished-at="2023-11-09T11:19:07 PST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[t-shirt]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[2.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[M]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifyLogo()[pri:0, instance:com.mystore.testcases.IndexPageTest@1ce24091]" started-at="2024-02-28T08:49:59 PST" name="verifyLogo" finished-at="2024-02-28T08:49:59 PST" duration-ms="0" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in C:\Users\kiran\AppData\Local\Temp\testng-eclipse-564812919\testng-customsuite.xml]]>
+in C:\Users\kiran\AppData\Local\Temp\testng-eclipse--294526343\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in C:\Users\kiran\AppData\Local\Temp\testng-eclipse-564812919\testng-customsuite.xml
+in C:\Users\kiran\AppData\Local\Temp\testng-eclipse--294526343\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:267)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
 at org.testng.internal.Parameters.createParameters(Parameters.java:684)
@@ -125,16 +106,70 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addToCartTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.AddToCartPageTest@36ebc363]" started-at="2023-11-09T11:19:07 PST" name="tearDown" finished-at="2023-11-09T11:19:07 PST" duration-ms="0" status="SKIP">
+        </test-method> <!-- verifyLogo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.IndexPageTest@1ce24091]" started-at="2024-02-28T08:49:59 PST" name="tearDown" finished-at="2024-02-28T08:49:59 PST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.mystore.testcases.AddToCartPageTest@36ebc363]" started-at="2023-11-09T11:19:07 PST" name="afterSuite" finished-at="2023-11-09T11:19:07 PST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.mystore.testcases.IndexPageTest@1ce24091]" started-at="2024-02-28T08:49:59 PST" name="setup" finished-at="2024-02-28T08:49:59 PST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyTitle()[pri:0, instance:com.mystore.testcases.IndexPageTest@1ce24091]" started-at="2024-02-28T08:49:59 PST" name="verifyTitle" finished-at="2024-02-28T08:49:59 PST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
+in C:\Users\kiran\AppData\Local\Temp\testng-eclipse--294526343\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
+in C:\Users\kiran\AppData\Local\Temp\testng-eclipse--294526343\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.IndexPageTest@1ce24091]" started-at="2024-02-28T08:49:59 PST" name="tearDown" finished-at="2024-02-28T08:49:59 PST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.mystore.testcases.IndexPageTest@1ce24091]" started-at="2024-02-28T08:49:59 PST" name="afterSuite" finished-at="2024-02-28T08:49:59 PST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.mystore.testcases.AddToCartPageTest -->
+      </class> <!-- com.mystore.testcases.IndexPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
